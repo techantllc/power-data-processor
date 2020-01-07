@@ -4,15 +4,21 @@
   "description": "Serverless webpack example using Typescript",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "./node_modules/.bin/prettier --write ./**/*/*.ts ./**/*.json"
   },
   "dependencies": {
-    "source-map-support": "^0.5.10"
+    "inversify": "^5.0.1",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.10",
+    "xlsx": "^0.15.4"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.17",
     "@types/node": "^10.12.18",
     "fork-ts-checker-webpack-plugin": "^3.0.1",
+    "prettier": "^1.19.1",
+    "serverless-offline": "^5.12.1",
     "serverless-webpack": "^5.2.0",
     "ts-loader": "^5.3.3",
     "typescript": "^3.2.4",

@@ -12,6 +12,7 @@ custom:
 # Add the serverless-webpack plugin
 plugins:
   - serverless-webpack
+  - serverless-offline
 
 provider:
   name: aws
@@ -26,5 +27,5 @@ functions:
     handler: handler.hello
     events:
       - http:
-          method: get
+          method: post
           path: hello
