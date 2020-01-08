@@ -4,7 +4,7 @@ import { injectable } from "inversify";
 
 @injectable()
 export class Processor implements IProcessor {
-    public processPulsePower(workbook: WorkBook) {
-        console.log(workbook.SheetNames)
+    public processPulsePower(workbook: WorkBook): any {
+        
     }
 }
